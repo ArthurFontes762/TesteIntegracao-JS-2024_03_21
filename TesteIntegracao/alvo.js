@@ -20,12 +20,12 @@ const function5RaizQuadrada = (input) => {
     }
 }
 
-// FUNÇÃO 6 (PRECISO CORRIGIR ESTA FUNÇÃO POIS NÃO ESTÁ FUNCIONANDO COMO DEVIA)
+// FUNÇÃO 6 (Funcionando corretamente)
 const function6CaixaAlta = (input) => {
     if (!/^[a-zA-Z]+$/.test(input)) {
         throw new Error('Função 6: Erro! Entrada inválida. Deve ser composta apenas por letras.');
     } else {
         const result = input.toUpperCase();
-        return { text: `Função 6: Recebida a palavra "${input}". A palavra em maiúsculas é "${result}". Resultado final:"${result}"_${previousResult}.`, value: previousResult };
+        return { text: `Função 6: Recebida a palavra "${input}". A palavra em maiúsculas é "${result}".`, value: result }; // Outro erro era o previousResult que estava aqui sem referência
     }
 }

@@ -57,7 +57,7 @@ class AlvoTest {
       const result5 = function5RaizQuadrada(result4.value);
 
       const input6 = prompt('Digite uma palavra para a Função 6:');
-      const result6 = function6CaixaAlta(result5.value, input6);
+      const result6 = function6CaixaAlta(input6); // Ajustado para passar apenas um argumento, um dos problemas.
 
       const alvoResult = document.getElementById('alvoResult');
       alvoResult.innerHTML = result4.text + '<br>' + result5.text + '<br>' + result6.text;
